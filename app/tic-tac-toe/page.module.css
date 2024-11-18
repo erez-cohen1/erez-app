@@ -6,14 +6,19 @@
   justify-content: center;
   padding: 1rem;
   margin-top: 1rem;
-  background: #f7f7f7;
+  background: linear-gradient(145deg, #f7f7f7, #e4e4e4);
   border-radius: 2rem;
-  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
-  max-width:30rem;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2);
   margin: 0.5rem auto;
+  max-width: 30rem;
   transition: all 0.3s ease;
 }
 
+/* Game Container Hover */
+.game:hover {
+  transform: scale(1.02);
+  box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.3);
+}
 
 /* Status Text */
 .status {
@@ -21,49 +26,116 @@
   flex-shrink: 3;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
-  padding: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
   font-weight: bold;
   color: #333;
   text-transform: uppercase;
-  letter-spacing: 0rem;
-}
-.boardRow{
-  flex-shrink: 1;
-  display: flex;
-  margin: 0;
-  flex-direction: row;
+  letter-spacing: 0.1rem;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Board Row */
+.boardRow {
+  flex-shrink: 1;
+  display: flex;
+  margin: 0.5rem 0;
+  gap: 0.5rem;
+  flex-direction: row;
+}
 
 /* Square (button) Styling */
 .square {
   width: 5rem;
   height: 5rem;
-  font-size: 2rem;
+  line-height: 1;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  line-height: 0rem;
   cursor: pointer;
   border: 0.15rem solid #ccc;
-  border-radius: 0.3rem;
-  background-color: #fff;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 0.1 0.2 rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background: radial-gradient(circle, #ffffff, #e4e4e4);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s ease;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 /* Square Hover Effect */
 .square:hover {
   background-color: #f1f1f1;
   transform: scale(1.1);
+  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* Click Animation */
+.square:active {
+  transform: scale(0.95);
+  background-color: #ddd;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 /* X and O styling */
 .square.x {
-  color: #e74c3c; /* Red for X */
+  color: #e74c3c;
+  animation: popIn 0.5s ease-out;
 }
 
 .square.o {
-  color: #3498db; /* Blue for O */
+  color: #3498db;
+  animation: popIn 0.5s ease-out;
 }
 
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .square {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    text-align: center;
+    line-height: 1;
+
+  }
+
+  .status {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .square {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    text-align: center;
+    line-height: 1;
+
+  }
+
+  .status {
+    font-size: 1rem;
+  }
+}

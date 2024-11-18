@@ -20,6 +20,7 @@ body {
   color: var(--color-primary);
   background-color: var(--color-background);
   font-family: var(--font-body);
+  
 }
 
 /* Layout */
@@ -144,6 +145,14 @@ table th {
 }
 
 /* Forms */
+input,
+button,
+textarea,
+select {
+  padding: 0.2em 0.5em;
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+}
 
 fieldset {
   margin-top: 1.5rem;
