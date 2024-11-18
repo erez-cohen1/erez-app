@@ -1,0 +1,69 @@
+/* Game Container */
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #f7f7f7;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
+  max-width:30rem;
+  margin: 0.5rem auto;
+  transition: all 0.3s ease;
+}
+
+
+/* Status Text */
+.status {
+  display: flex;
+  flex-shrink: 3;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0rem;
+}
+.boardRow{
+  flex-shrink: 1;
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+}
+
+
+/* Square (button) Styling */
+.square {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0rem;
+  cursor: pointer;
+  border: 0.15rem solid #ccc;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 0.1 0.2 rgba(0, 0, 0, 0.1);
+}
+
+/* Square Hover Effect */
+.square:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+/* X and O styling */
+.square.x {
+  color: #e74c3c; /* Red for X */
+}
+
+.square.o {
+  color: #3498db; /* Blue for O */
+}
+

@@ -6,9 +6,9 @@ export const DEMOS_ENABLED =
   process.env.DEMOS_ENABLED === "true" ? true : false;
 export const DEMOS = [
   {
-    title: "Blank",
-    slug: "/demos/00_blank",
-    description: "A minimal blank slate.",
+    title: "tic-tac-toe",
+    slug: "/tic-tac-toe",
+    description: "tic-tac-toe game",
   },
   {
     title: "HTML Elements",
