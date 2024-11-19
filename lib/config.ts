@@ -1,4 +1,4 @@
-export const APP_NAME = "Starter Kit";
+export const APP_NAME = "Erez App";
 export const COURSE_GITHUB = "https://github.com/product-jam-2025";
 export const COURSE_CREDITS = "Product Jam 2025";
 
@@ -11,10 +11,10 @@ export const DEMOS = [
     description: "tic-tac-toe game",
   },
   {
-    title: "HTML Elements",
-    slug: "/demos/00_elements",
+    title: "Nasa data",
+    slug: "/nasa",
     description:
-      "This page provides an overview of common HTML elements. Use this page to see how your CSS changes the styling of these elements.",
+      "nasa data",
   },
   {
     title: "Contact form",

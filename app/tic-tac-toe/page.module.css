@@ -108,7 +108,7 @@
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .square {
     width: 4rem;
     height: 4rem;
@@ -122,13 +122,13 @@
   .status {
     font-size: 1.2rem;
   }
-}
+} */
 
 @media (max-width: 480px) {
   .square {
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.2rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     text-align: center;
     line-height: 1;
