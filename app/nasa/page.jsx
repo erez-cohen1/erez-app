@@ -1,7 +1,7 @@
 'use client';
-require('dotenv').config();
-
 import { useState, useEffect } from 'react';
+import styles from './page.module.css'; // Import the CSS module
+require('dotenv').config();
 
 // Function to fetch data from the NASA API
 async function getData(count) {
@@ -9,7 +9,7 @@ async function getData(count) {
   const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=${count}`;
   const response = await fetch(url);
   const data = await response.json();
-  return Array.isArray(data) ? data : [data]; // Ensure data is always an array
+  return Array.isArray(data) ? data : [data];
 }
 
 export default function Page() {
@@ -18,38 +18,36 @@ export default function Page() {
 
   useEffect(() => {
     async function fetchData() {
-      const data = await getData(4); // Fetch 4 items
+      const data = await getData(4);
       setApodData(data);
       setLoading(false);
     }
-
     fetchData();
   }, []);
 
   return (
-    <div>
-      <h1>NASAs Astronomy Picture of the Day (APOD)</h1>
+    <div className={styles.container}>
+      <h1 className={styles.title}>NASAs Astronomy Picture of the Day (APOD)</h1>
       {loading ? (
-        <p>Loading...</p>
+        <p className={styles.loading}>Loading...</p>
       ) : (
-        <div>
+        <div className={styles.grid}>
           {apodData.map((item, index) => (
-            <div key={index}>
-              <h2>{item.title}</h2>
-              <p>{item.date}</p>
+            <div key={index} className={styles.apodItem}>
+              <h2 className={styles.apodTitle}>{item.title}</h2>
+              <p className={styles.date}>{item.date}</p>
               {item.media_type === 'image' ? (
-                <img src={item.url} alt={item.title} style={{ maxWidth: '100%' }} />
+                <img src={item.url} alt={item.title} className={styles.image} />
               ) : (
                 <iframe
                   src={item.url}
                   title={item.title}
-                  frameBorder="0"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
-                  style={{ width: '100%', height: '500px' }}
+                  className={styles.video}
                 />
               )}
-              <p>{item.explanation}</p>
+              <p className={styles.explanation}>{item.explanation}</p>
             </div>
           ))}
         </div>

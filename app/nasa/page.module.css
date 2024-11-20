@@ -1,3 +1,119 @@
-.hey {
-  font-size: 3rem;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&display=swap');@font-face {
+  font-family: "Lugrasimo";
+  src: url("/fonts/Lugrasimo-Regular.woff2") format("woff2"),
+       url("/fonts/Lugrasimo-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo 2";
+  src: url("/fonts/Exo2-Regular.woff2") format("woff2"),
+       url("/fonts/Exo2-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/Orbitron-Regular.woff2") format("woff2"),
+       url("/fonts/Orbitron-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.container {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Orbitron";
+  font-size: 2.5rem;
+  text-align:center;
+  margin-bottom: 2rem;
+  color: #003984bc;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.apodItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+
+}
+
+.apodItem:hover {
+  transform: scale(1.05); /* Grows slightly on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a larger shadow for emphasis */
+}
+
+.apodTitle {
+  font-family: "Lugrasimo";
+  font-size: 1.7rem;
+  font-style: italic;
+  color: #333;
+}
+
+.date {
+  font-family: "Lugrasimo";
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.video {
+  width: 20rem; 
+  height: 20rem; 
+  border: none;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.explanation {
+  font-size: 1rem;
+  color: #242323;
+  line-height: 2;
+  font-family: "Exo 2";
+}
+.image {
+  filter: grayscale(15%);
+  width: 20rem;
+  height: 20rem; 
+  object-fit: cover; /* Ensures the image fits within the dimensions without distortion */
+  border-radius: 1.5rem; /* Optional: Adds rounded corners */
+  transition: transform 0.4s ease, filter 0.4s ease;
+
+}
+.image:hover {
+  transform: scale(1.11); /* Slight zoom */
+  filter: grayscale(0); /* Transition to full color */
 }

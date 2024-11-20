@@ -20,6 +20,8 @@ body {
   color: var(--color-primary);
   background-color: var(--color-background);
   font-family: var(--font-body);
+  display: flex;
+  flex-direction:column;
   
 }
 
@@ -28,6 +30,7 @@ main {
   max-width: 60rem;
   padding: 2rem;
   margin: 0 auto;
+  
 }
 
 header {
