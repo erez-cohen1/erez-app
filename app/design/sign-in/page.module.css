@@ -108,4 +108,11 @@
         align-self: flex-start;
         margin-left: 10%;
     }
-
+    .signedInText {
+        margin-top: 0;
+        align-self: start;
+        margin-left: 10%;
+        color: red;
+        font-size: 0.7rem;
+      }
+      

@@ -1,0 +1,93 @@
+
+
+  /* Main container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Heading styling */
+  .heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    opacity: 0.8;
+  }
+  
+  /* Button container */
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Button styling */
+  .button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #ff67e9, #ff44aa);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ff44aa, #ff67e9);
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Footer Styling */
+  .footer {
+    padding: 0;
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #675f5f;
+    opacity: 0.8;
+  }
+  .footer p{
+    margin: 0.2rem;
+  }
+
+  
+  /* Fade-in Animation for Heading */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
