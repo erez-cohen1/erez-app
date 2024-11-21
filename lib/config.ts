@@ -17,10 +17,10 @@ export const DEMOS = [
       "nasa data",
   },
   {
-    title: "Contact form",
-    slug: "/demos/01_contact",
+    title: "sockTime",
+    slug: "/design",
     description:
-      "A simple example of a contact form that sends an email. In this case, the contact form sends an email to the email entered in the form.",
+      "sockTime design",
   },
   {
     title: "Basic Data Visualization",
