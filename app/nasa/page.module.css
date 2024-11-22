@@ -26,7 +26,7 @@
 
 .container {
   display: flex;
-  width: 60%;
+  width: 65%;
   flex-direction: column;
   padding: 1rem;
   font-family: Arial, sans-serif;
@@ -109,12 +109,21 @@
   width: 20rem;
   height: 20rem; 
   object-fit: cover; /* Ensures the image fits within the dimensions without distortion */
-  border-radius: 1.5rem; /* Optional: Adds rounded corners */
+  border-radius: 1.5rem; 
   transition: transform 0.4s ease, filter 0.4s ease;
 
+}
+@media (max-width: 450px) {
+  .container {
+    width: 100%; 
+    padding: 0.5rem; 
+    border-radius: 0; 
+  }
 }
 .image:hover {
   transform: scale(1.11); /* Slight zoom */
   filter: grayscale(0); /* Transition to full color */
 }
+
+
 

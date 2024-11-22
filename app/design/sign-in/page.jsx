@@ -38,7 +38,7 @@ export default function SockTime() {
 
         <button className={styles.submitButton} onClick={handleSignInClick}>Sign In</button>
         <h5 className={styles.forgotPassword}>forgot password?</h5>
-        {isSignedIn && <p className={styles.signedInText}>Sorry your email was incorrect.please double-check your email.</p>}
+        {isSignedIn && <p className={styles.signedInText}>Sorry your email was incorrect. please double-check your email.</p>}
       </div>  
     </main>
   );

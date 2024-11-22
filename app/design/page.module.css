@@ -6,7 +6,7 @@
   background-color: black;
   height: 100vh; /* Full viewport height */
   min-height: 600px;
-  max-width: 450px;
+  max-width: 410px;
   display: flex;
   flex-direction: column; /* Stacks .upper and .lower vertically */
   /* Adding the SVG as a background image */
@@ -17,28 +17,26 @@
 }
 
 .upper {
-  /* Upper part: 60% of the parent's height */
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
   height: 67%;
-  background-image: url('/zoomLogo.svg'); /* Replace with your SVG path */
+  background-image: url('/zoomLogo.svg');
   background-repeat: no-repeat;
   background-position: 50% 59%; /* Centers the background */
   background-size: 8rem 5rem;
 }
 
 .upper h4 {
-  font-size: 0.7rem; /* Adjust font size if needed */
+  font-size: 0.7rem; 
   height: 37%;
-  color: aliceblue; /* Ensure text inside .upper is visible */
+  color: aliceblue; 
 }
 
   .lower {
-    /* Lower part with white background */
-    height: 33%; /* Remaining 40% of the parent's height */
-    background-color: white; /* Overrides the parent's black background */
+    height: 33%; 
+    background-color: white; 
     border-radius: 5%;
     display: flex;
     flex-direction: column;
@@ -48,7 +46,7 @@
 
   .lower h3 {
     padding-top: 1rem;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-top: 1.5em;
 
@@ -56,7 +54,7 @@
   }
   .lower h4 {
     margin: 0;
-    font-size: 0.7rem; 
+    font-size: 1rem; 
     font-weight: bold;
   }
 
@@ -74,7 +72,7 @@
     transform: scale(1.07); /* Slightly grow the button */
   }
   .upperButton{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 0.8rem;
   }
 

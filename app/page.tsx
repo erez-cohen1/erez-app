@@ -6,26 +6,26 @@ export default function Home() {
     <main className={styles.container}>
       <h1 className={styles.heading}>Welcome to Erezs app</h1>
 
-      <p className={styles.subtitle}>Navigate the awesome pages below</p>
+      <p className={styles.subtitle}>Navigate the pages below</p>
 
       {/* Three buttons linking to different pages */}
       <div className={styles.buttonContainer}>
-        <Link href="/tic-tac-toe">
+        <Link className={styles.buttons} href="/tic-tac-toe">
           <button className={styles.button}>Tic-Tac-Toe</button>
         </Link>
 
-        <Link href="/nasa">
+        <Link className={styles.buttons} href="/nasa">
           <button className={styles.button}>Nasa API</button>
         </Link>
 
-        <Link href="/design">
-          <button className={styles.button}>sockTime</button>
+        <Link className={styles.buttons} href="/design" >
+          <button className={styles.button}>SocksTime</button>
         </Link>
       </div>
 
       <footer className={styles.footer}>
-        <p>Devolped by Erez cohen</p>
-        <p>sockTime designed by Bar cohen</p>
+        <p>Devolped by Erez Cohen</p>
+        <p>SocksTime designed by Bar Cohen</p>
 
       </footer>
     </main>
