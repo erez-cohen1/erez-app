@@ -6,9 +6,7 @@ import Navbar from "@/lib/components/Navbar";
 import Footer from "@/lib/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Digital Product Jam Starter Kit",
-  description:
-    "A starter kit for wiritng code in the Digital Product Jam course.",
+  title: "Erez's app",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

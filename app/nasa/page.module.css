@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&display=swap');@font-face {
-  font-family: "Lugrasimo";
-  src: url("/fonts/Lugrasimo-Regular.woff2") format("woff2"),
-       url("/fonts/Lugrasimo-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Exo 2";
-  src: url("/fonts/Exo2-Regular.woff2") format("woff2"),
-       url("/fonts/Exo2-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Orbitron";
-  src: url("/fonts/Orbitron-Regular.woff2") format("woff2"),
-       url("/fonts/Orbitron-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&display=swap');
 
 
 .container {

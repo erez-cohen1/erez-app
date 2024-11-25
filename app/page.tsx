@@ -4,7 +4,7 @@ import styles from './home.module.css'; // Make sure the styles are properly imp
 export default function Home() {
   return (
     <main className={styles.container}>
-      <h1 className={styles.heading}>Welcome to Erezs app</h1>
+      <h1 className={styles.heading}>Welcome to Erez's app</h1>
 
       <p className={styles.subtitle}>Navigate the pages below</p>
 
@@ -15,7 +15,7 @@ export default function Home() {
         </Link>
 
         <Link className={styles.buttons} href="/nasa">
-          <button className={styles.button}>Nasa API</button>
+          <button className={styles.button}>NASA API</button>
         </Link>
 
         <Link className={styles.buttons} href="/design" >

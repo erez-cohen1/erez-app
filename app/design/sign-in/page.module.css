@@ -1,6 +1,6 @@
 
     .hey {
-        border-radius: 5%;
+        width: 100%;
         border: 3px;
         padding: 0;
         /* Full-page black background */
@@ -32,17 +32,24 @@
         display: flex;
         margin-top: 0.2rem;
         width: 80%;
+        
     }
 
 
     .signInHeder {
         display: flex;
-        justify-content: space-between;  /* Places elements on the left and right */
         align-items: center;             /* Vertically center the elements */
+        position: relative;
         background-color: white;
         color: black;
         margin: 0;
         padding: 0;
+    } 
+
+    .signInHeder h5{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); /*Centers item2 horizontally*/
     }
     
     .signInHeder a {
@@ -50,12 +57,12 @@
         padding: 0;
         color: red;
         font-weight: bold;
-        text-decoration: none;           /* Optional: to remove underline from Link */
+        text-decoration: none;         
     }
 
     .signInHeder a:hover {
         color: red;
-        text-decoration: none;           /* Optional: to remove underline from Link */
+        text-decoration: none;          
     }
     
     .signInHeder h5 {
@@ -99,7 +106,7 @@
 
     .submitButton:hover {
         cursor: pointer;
-        transform: scale(1.07); /* Slightly grow the button */
+        transform: scale(1.07); 
     }
 
     .enterEmail{

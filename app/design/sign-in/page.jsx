@@ -17,22 +17,20 @@ export default function SockTime() {
 
   return (
     <main className={styles.hey}>
-    <header className={styles.signInHeder}>
+    <div className={styles.signInHeder}>
       <p><Link href="/design">Cancel</Link></p>
       <h5>Sign In</h5>
-      <h5 className={styles.phantom}>*******</h5>
-    </header>
+    </div>
       <div className={styles.upper}>
 
         <h5 className={styles.enterEmail}>ENTER YOUR EMAIL ADDRESS</h5>
 
           <input type="email" id="email"name="email"
-              placeholder="socks@example.com" 
+              placeholder="Email: socks@example.com" 
               className={styles.input}/>
         
-          <input
-            type="password"  id="password"  name="password"
-            placeholder="Required" 
+          <input type="password"  id="password"  name="password"
+            placeholder="Password: required" 
             className={styles.input}
           />
 

@@ -5,7 +5,7 @@ require('dotenv').config();
 
 // Function to fetch data from the NASA API
 async function getData(count) {
-  const apiKey = process.env.NEXT_PUBLIC_NASA_API_KEY;
+  const apiKey = process.env. NEXT_PUBLIC_NASA_API_KEY;
   const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=${count}`;
   const response = await fetch(url);
   const data = await response.json();
