@@ -10,8 +10,8 @@
         max-height: 1000px;
         max-width: 450px;
         display: flex;
-        flex-direction: column; /* Stacks .upper and .lower vertically */
-        background-image: url('/frame1.svg'); /* Replace with your SVG path */
+        flex-direction: column; 
+        background-image: url('/Frame1.svg'); 
         background-repeat: no-repeat;
         background-position:center; 
         background-size: 70% auto;  
@@ -38,7 +38,7 @@
 
     .signInHeder {
         display: flex;
-        align-items: center;             /* Vertically center the elements */
+        align-items: center;             
         position: relative;
         background-color: white;
         color: black;
