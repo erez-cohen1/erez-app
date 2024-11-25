@@ -9,9 +9,8 @@
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2);
   max-width: 33rem;
   transition: all 0.3s ease;
-  margin: 50vh auto; /* 50% of the viewport height vertically, auto for horizontal centering */
-  transform: translateY(-50%);
-  
+  margin: 0 auto; 
+  transform: translateY(+50%);
 }
 
 
