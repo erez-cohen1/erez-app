@@ -27,7 +27,7 @@ export default function Page() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>NASAs Astronomy Picture of the Day (APOD)</h1>
+      <h1 className={styles.title}>NASA&apos;s Astronomy Picture of the Day (APOD)</h1>
       {loading ? (
         <p className={styles.loading}>Loading...</p>
       ) : (
