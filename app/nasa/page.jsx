@@ -18,7 +18,7 @@ export default function Page() {
 
   useEffect(() => {
     async function fetchData() {
-      const data = await getData(4);
+      const data = await getData(3);
       setApodData(data);
       setLoading(false);
     }

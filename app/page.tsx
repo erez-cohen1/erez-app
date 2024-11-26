@@ -4,29 +4,41 @@ import styles from './home.module.css'; // Make sure the styles are properly imp
 export default function Home() {
   return (
     <main className={styles.container}>
-      <h1 className={styles.heading}>Welcome to Erez&apos;s app</h1>
+      <h1 className={styles.heading}>Welcome to Erez&apos;s App</h1>
+      <p className={styles.subtitle}>Explore the features by clicking on the images below</p>
 
-      <p className={styles.subtitle}>Navigate the pages below</p>
-
-      {/* Three buttons linking to different pages */}
-      <div className={styles.buttonContainer}>
-        <Link className={styles.buttons} href="/tic-tac-toe">
-          <button className={styles.button}>Tic-Tac-Toe</button>
+      <div className={styles.imageGrid}>
+        <Link href="/tic-tac-toe" className={styles.imageLink}>
+          <img
+            src="/tic-tac-toe.png"
+            alt="Tic-Tac-Toe"
+            className={styles.image}
+          />
+          <p className={styles.imageText}>Tic-Tac-Toe</p>
         </Link>
 
-        <Link className={styles.buttons} href="/nasa">
-          <button className={styles.button}>NASA API</button>
+        <Link href="/nasa" className={styles.imageLink}>
+          <img
+            src="/NASA.jpg"
+            alt="NASA API"
+            className={styles.image}
+          />
+          <p className={styles.imageText}>NASA API</p>
         </Link>
 
-        <Link className={styles.buttons} href="/design" >
-          <button className={styles.button}>SocksTime</button>
+        <Link href="/design" className={styles.imageLink}>
+          <img
+            src="/sockslogo.jpg"
+            alt="SocksTime"
+            className={styles.image}
+          />
+          <p className={styles.imageText}>SocksTime</p>
         </Link>
       </div>
 
       <footer className={styles.footer}>
-        <p>Devolped by Erez Cohen</p>
+        <p>Developed by Erez Cohen</p>
         <p>SocksTime designed by Bar Cohen</p>
-
       </footer>
     </main>
   );

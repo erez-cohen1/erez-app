@@ -3,9 +3,8 @@
         width: 100%;
         border: 3px;
         padding: 0;
-        /* Full-page black background */
         background-color: black;
-        height: 100vh; /* Full viewport height */
+        height: 100vh; 
         min-height: 600px;
         max-height: 1000px;
         max-width: 450px;
@@ -122,4 +121,6 @@
         color: red;
         font-size: 0.7rem;
       }
+
+
       
