@@ -71,14 +71,14 @@
   padding: 1rem;
   font-size: 1.2rem;
   color: #333;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   width: 100%;
   text-align: center;
 }
 
 /* Footer Styling */
 .footer {
-  margin-top: 3rem; /* Adjust the value to push the footer lower */
+  margin-top: 3rem; 
   width: 100%;
   font-size: 0.9rem;
   color: #675f5f;
